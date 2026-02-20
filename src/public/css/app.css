@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #f9fafb;
+}
+
+/* ヘッダー */
+.app-header {
+    background: white;
+    border-bottom: 1px solid #eee;
+    padding: 15px 30px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6bb3;
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #555;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+}
+
+/* メイン */
+.app-container {
+    padding: 40px;
+}
+
+/* ===== ダッシュボード全体中央寄せ ===== */
+.dashboard-wrapper {
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* ===== 共通カード ===== */
+.dashboard-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+/* ===== ステータスカード ===== */
+.status-card {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.status-item {
+    flex: 1;
+}
+
+.status-item .label {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.status-item .value {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ===== 検索ヘッダー ===== */
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ===== メインボタン ===== */
+.btn-main {
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #c084fc, #f472b6);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ===== テーブル ===== */
+.weight-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.weight-table th,
+.weight-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+/* hover要件 */
+.weight-table tbody tr:hover {
+    background-color: #faf5ff;
+}
+
+.pagination a {
+    text-decoration: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.pagination svg {
+    width: 16px;
+    height: 16px;
+}
+
+.pagination .page-link {
+    border: none;
+    background: transparent;
+    color: #555;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+.pagination .active .page-link {
+    background: linear-gradient(135deg, #c084fc, #f472b6);
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+
+.pagination .page-link:hover {
+    background: linear-gradient(135deg, #c084fc, #f472b6);
+    color: white;
+    border-radius: 8px;
+}
+
+
+/* ===== ヘッダー ===== */
+
+.header {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff69b4; /* ピンク */
+}
+
+.header-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.header-btn {
+    padding: 8px 16px;
+    background-color: linear-gradient(135deg, #c084fc, #f472b6);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.header-btn:hover {
+    opacity: 0.8;
+}
+
+/* ===== 目標体重中央配置 ===== */
+
+.target-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.target-card {
+    background: #ffffff;
+    width: 400px;
+    max-width: 90%;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.card-title {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 入力中央寄せ */
+.target-card .form-group {
+    margin-bottom: 20px;
+}
+
+.target-card input {
+    width: 80%;
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* ===== フォーム中央カード ===== */
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.form-card {
+    background: #ffffff;
+    width: 450px;
+    max-width: 95%;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.input-with-unit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-with-unit input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.required {
+    color: linear-gradient(135deg, #c084fc, #f472b6);
+    font-size: 12px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+}

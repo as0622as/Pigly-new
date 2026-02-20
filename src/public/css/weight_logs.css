@@ -1,0 +1,167 @@
+.page-title {
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.form-container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: linear-gradient(135deg, #c084fc, #f472b6);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    opacity: 0.9;
+}
+
+.delete-form {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+/* 背景 */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* :targetで表示 */
+.modal:target {
+    display: flex;
+}
+
+/* 中身 */
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    width: 400px;
+    border-radius: 12px;
+    position: relative;
+}
+
+/* 閉じるボタン */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.open-button {
+    display: inline-block;
+    padding: 10px 18px;
+
+    text-decoration: none;   /* ← 下線消す */
+    color: #fff;
+
+    background: linear-gradient(135deg, #c084fc, #f472b6);
+    border-radius: 8px;
+
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.open-button:hover {
+    opacity: 0.9;
+}
+
+.edit-button {
+    text-decoration: none; /* 下線なし */
+    font-size: 18px;
+    font-weight: bold;
+
+    background: linear-gradient(135deg, #c084fc, #f472b6); /* グラデーション */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    transition: 0.2s;
+}
+
+.edit-button:hover {
+    background: linear-gradient(135deg, #f472b6, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== ページネーション全体 ===== */
+.pagination {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    margin-top: 30px !important;
+}
+
+/* リンク */
+.pagination .page-link {
+    border: none !important;
+    background: transparent !important;
+    color: #555 !important;
+    text-decoration: none !important;
+    padding: 8px 14px !important;
+    border-radius: 8px !important;
+}
+
+/* 今いるページ */
+.pagination .active .page-link {
+    background: linear-gradient(135deg, #c084fc, #f472b6) !important;
+    color: #fff !important;
+}
+
+/* ホバー */
+.pagination .page-link:hover {
+    background: linear-gradient(135deg, #c084fc, #f472b6) !important;
+    color: #fff !important;
+}
+
