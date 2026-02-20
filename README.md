@@ -30,7 +30,7 @@ PiGLyは、日々の体重、摂取カロリー、運動時間、運動内容を
 1. リポジトリをクローン
 ```bash
 git clone git@github.com:as0622as/Pigly-new.git
-cd Pigly
+cd Pigly-new
 
 2. Dockerで環境を立ち上げ
 docker compose up -d --build
